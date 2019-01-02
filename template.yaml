@@ -12,7 +12,7 @@ Resources:
         openapi: '3.0'
         info: {}
         paths:
-          /:
+          /getdata:
             get:
               x-amazon-apigateway-integration:
                 httpMethod: POST
@@ -36,10 +36,10 @@ Resources:
       Policies:
         - AWSXrayWriteOnlyAccess
       Events:
-        api57D4E66AGET:
+        api57D4E66AGETgetdata:
           Type: Api
           Properties:
-            Path: /
+            Path: /getdata
             Method: GET
             RestApiId: !Ref api57D4E66A
     Metadata:
