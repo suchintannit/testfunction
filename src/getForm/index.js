@@ -8,7 +8,7 @@ const formHTML = `<!DOCTYPE html>
     <h1>Subscribe to our newsletter</h1>
     <form action="submit" method="get">
         <label>Email
-            <input name="email" type="text">
+            <input name="ECG file MAT" value="upload" required="required" type="file">
         </label>
         <input type="submit" value="Submit">
     </form>
